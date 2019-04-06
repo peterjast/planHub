@@ -1,0 +1,9 @@
+<li>
+	{{task_name}}
+
+{{#if complete}}
+
+{{else}}
+<button class="complete" data-id="{{task_id}}" data-newcompleted="{{complete}}">Complete!</button>
+{{/if}}
+</li>
