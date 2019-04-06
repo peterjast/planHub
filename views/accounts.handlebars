@@ -1,35 +1,40 @@
 {{> Navigation/nav-block dashboard=false create=false account=false signup=true}}
+<br><br>
+<div id="sign-up-page">
+  <header style="background-color:black" class="create-acct-wrap header-wrap" align="center">
+    <img src="../assets/images/chores.jpg" alt="logo" style="width:600px; padding-top:20px">
+    <br>
+    <h1 style="color: #f19833; padding:10px"><i style="color:white" class="material-icons lock">lock</i>New User Registration<i
+        style="color:white" class="material-icons lock">lock</i></h1>
+    <h3 id="create-err-msg"></h3>
+  </header>
 
-<div class="container" >
-  <header class="create-acct-wrap header-wrap" align="center">
-  <h1>Create Your Account</h1>
-  <h3 id="create-err-msg"></h3>
- </header>
+  <h3 id="err-msg"></h3>
 
-
-<h3 id="err-msg"></h3>
-
-<form id= "create-form">
-  <div class="form-row">
-    <div class="form-group col-sm-12">
-      <label for="inputEmail">Email</label>
-      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+  <form class="container" style="width:600px;" id="create-form">
+    <div class="form-row">
+      <div class="form-group col-sm-12">
+        <i class="material-icons">email</i>
+        <label for="inputEmail">Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+      </div>
     </div>
-  </div>  
-  <div class="form-row">
-    <div class="form-group col-sm-12">
-      <label for="inputPassword">Password</label>
-      <input type="password" class="form-control" id="inputPassword" placeholder="password">
+    <div class="form-row">
+      <div class="form-group col-sm-12">
+        <label for="inputPassword">Password</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="password">
+      </div>
     </div>
-  </div>  
 
-    
+
     <div>
-    <h2 id="message"></h2>
+      <h2 id="message"></h2>
+    </div>
+
+    <button style="margin-bottom:25px; padding: 6px 25px; background: #f19833; color: #fff; font-weight: bold; border: 0 none; border-radius: 3px;"
+    type="submit" id="add-account" class="btn btn-primary">Submit</button>
+
+
+
+  </form>
   </div>
-
-  <button type="submit" id="add-account" class="btn btn-primary">Submit</button>
-
-
-
-</form>
