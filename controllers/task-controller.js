@@ -42,7 +42,7 @@ module.exports = function (app) {
 
             
     //Update the task's desceription etc...
-    /*app.get("/post-tasks/update/:account_id/:account_key/:task_id", function (req, res) {
+    app.get("/post-tasks/update/:account_id/:account_key/:task_id", function (req, res) {
         db.Accounts.findOne({
             where: {
                 id: req.params.account_id,
@@ -68,7 +68,7 @@ module.exports = function (app) {
         })
 
     });
-*/
+
     //Delete a task.
     app.delete("/post-tasks/:task_id", function (req, res) {
         db.tasks.destroy({

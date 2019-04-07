@@ -4,7 +4,7 @@ var connection;
 connection = {
     "development": {
         "username": "root",
-        "password": "Nordby2015",
+        "password": "4Shizle#11",
         "database": "users_db",
         "host": "localhost",
         "dialect": "mysql"

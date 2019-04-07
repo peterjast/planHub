@@ -1,23 +1,44 @@
-<div id="main-container" class="container">
-<div class="jumbotron text-center header-wrap" align="center">
-    <img src="" alt="logo" class="mb-4" style="width:210px;">
-    <p class="lead">Welcome to <strong>PlanHub</strong> where getting stuff done is fun!</p>
-    <hr class="my-4">
-    <p class="lead">View your dashboard or create tasks.</p>
-    <div>
+<body>
+<div class="container" id="login-page">
+    <div id="login-logo">
+            <img id="image2" src="../assets/images/logo.jpg" alt="logo">
+                <br>
+            <img id="image" src="../assets/images/planhub.png" alt="planhub">   
+    </div>
+        <br>
+        <p>
+            Does your child have trouble staying on task? 
+            <br>
+            Our app provides some incentive-based structure
+            in a fun way. 
+            <br>
+            We encourage you to create an account and give it a try!
+        </p>
+       
         {{#if isloggedin}}
             <button type="submit" id="search-task" class="btn">Dashboard</button>
             <button type="submit" id="post-task" class="btn">Create Tasks</button>
             <a href="/logout"> <button type="btn" class="btn">Logout</button></a>
         {{else}}
-            <button type="submit" id="sign-in-modal" class="btn">Sign In!</button>
-            <button type="submit" id="sign-up" class="btn">Sign Up!</button>
+            <div class="register">
+                <button type="submit" id="sign-in-modal" class="btn" class="sign-in-style">
+                Sign In!</button>
+                <br>
+                <span style="color: #657575">Don't have an account yet?</span>
+             <br>
+                <button type="submit" id="sign-up" class="btn" >
+                Sign Up!</button>
+                
+                
+            </div>
         {{/if}}
-        
+      
+  
+       
     </div>
-</div>
-
+    
     
 </div>
 
 {{> Modal/signin-block}}
+</body>

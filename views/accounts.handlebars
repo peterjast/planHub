@@ -1,35 +1,41 @@
+<body>
 {{> Navigation/nav-block dashboard=false create=false account=false signup=true}}
-
-<div class="container" >
+<div class="container" id="sign-up-page">
   <header class="create-acct-wrap header-wrap" align="center">
-  <h1>Create Your Account</h1>
-  <h3 id="create-err-msg"></h3>
- </header>
+    <img id="image3" src="../assets/images/chores.jpg" alt="logo">
+    <br>
+    <h1 id="registration"><i style="color:white" class="material-icons lock">lock</i>New User Registration<i
+        style="color:white" class="material-icons lock">lock</i></h1>
+    <h3 id="create-err-msg"></h3>
+  </header>
 
-
-<h3 id="err-msg"></h3>
-
-<form id= "create-form">
-  <div class="form-row">
-    <div class="form-group col-sm-12">
-      <label for="inputEmail">Email</label>
-      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+  <h3 id="err-msg"></h3>
+<br>
+  <form  class="container" id="create-form">
+    <div class="form-row">
+   
+        
+        <label for="inputEmail"><i class="material-icons">email</i>Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+     
     </div>
-  </div>  
-  <div class="form-row">
-    <div class="form-group col-sm-12">
-      <label for="inputPassword">Password</label>
-      <input type="password" class="form-control" id="inputPassword" placeholder="password">
-    </div>
-  </div>  
-
+    <br>
+    <div class="form-row">
     
+        <label for="inputPassword"><i class="material-icons">vpn_key</i>Password</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="password">
+   
+    </div>
+
+
     <div>
-    <h2 id="message"></h2>
+      <h2 id="message"></h2>
+    </div>
+
+    <button type="submit" id="add-account" class="btn btn-primary">Submit</button>
+
+
+
+  </form>
   </div>
-
-  <button type="submit" id="add-account" class="btn btn-primary">Submit</button>
-
-
-
-</form>
+</body>

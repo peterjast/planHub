@@ -1,61 +1,33 @@
+<body>
 {{> Navigation/nav-block dashboard=true create=false account=false signup=false}}
-   
-<main class="no-padding no-pad-top taskmain">
+<br><br>
 
-<div class="row">
-<div class= "col-4">
-<h2>Tasks to be completed:</h2>
-<ul>
+<main >
+
+  <h2>Tasks to be completed:</h2>
+  <ul>
   {{#each tasks}}
       {{#unless completed}}
     {{> query-block complete=false}}
         {{/unless}}
   {{/each}}
 </ul>
-</div>
-<div class= "col-4"></div>
-<div class= "col-4">
+
+
 <h2>COMPLETED!</h2>
-<ul>
+    <ul>
   {{#each tasks}}
       {{#if completed}}
     {{> query-block complete=true}}
         {{/if}}
   {{/each}}
-</ul>
-</div>
-</div>
-  
-  <div class="container start-splash-container row">
-    <div class="col s12 center-align">
-      <h5 class="createtasks red lighten-4">Complete 6 tasks and choose from these great prizes!</h5>
-        <div class="row">
-          <div class="col m4 s12 prizes">
-            Bowl of Ice Cream
-          </div>
-          <div class="col m4 s12 prizes">
-            One hour of TV or video games
-          </div>
-          <div class="col m4 s12 prizes">
-            Ride bike for an hour
-          </div>
-        </div>
-        <div class="row">
-          <div class="col m4 s12 prizes">
-            Go to the playground
-          </div>
-          <div class="col m4 s12 prizes">
-            Visit the Science Museum
-          </div>
-          <div class="col m4 s12 prizes">
-            Sit outside and play with sticks
-          </div>
-        </div>
-    </div>
-  </div>
-    
-</main>
+      </ul>
 
+
+  
+  
+</main>
+</body>
 <script type="text/javascript" src="assets/js/materialize.min.js"></script>
   <script>
     $(document).ready(function() {
