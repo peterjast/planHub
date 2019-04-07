@@ -1,20 +1,20 @@
-
-<div id="login-page">
-    <div style="background-color:black">
-    <img src="../assets/images/logo.jpg" alt="logo" style="width:500px; padding-top:20px">
-    <br>
-    <img src="../assets/images/planhub.png" alt="planhub" style="width:500px">
+<body>
+<div class="container" id="login-page">
+    <div id="login-logo">
+            <img id="image2" src="../assets/images/logo.jpg" alt="logo">
+                <br>
+            <img id="image" src="../assets/images/planhub.png" alt="planhub">   
     </div>
-    <br>
-    <p>
-    Does your child have trouble staying on task? 
-            <br><br>
-            Our app is intended to provide some incentive-based structure
+        <br>
+        <p>
+            Does your child have trouble staying on task? 
+            <br>
+            Our app provides some incentive-based structure
             in a fun way. 
-            <br><br>
-            We encourage you to register an account and give it a try!
-            </p>
-         <br><br>
+            <br>
+            We encourage you to create an account and give it a try!
+        </p>
+       
         {{#if isloggedin}}
             <button type="submit" id="search-task" class="btn">Dashboard</button>
             <button type="submit" id="post-task" class="btn">Create Tasks</button>
@@ -41,3 +41,4 @@
 </div>
 
 {{> Modal/signin-block}}
+</body>
